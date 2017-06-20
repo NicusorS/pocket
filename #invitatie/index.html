@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Costi si Luiza</title>
+    
+        <link rel="stylesheet" type="text/css" href="layout.css">
+         <link rel="stylesheet" type="text/css" href="a.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        
+        
+    </head>
+    
+    
+<body>  
+    <div id="nav">
+    
+    <div id="nav-wrapper">
+        <ul>
+            <li><a href="#despre" >POVESTEA NOASTR&#258;</a></li>
+            <li><a href="#mijloc">DETALII</a></li>
+            <li><a href="#form" >CONFIRMARE</a></li>
+            
+        </ul>
+    </div>
+</div>
+    
+<div class="coperta" id="despre">
+    <img src="imagini/miri.png" alt="poza">
+    <div id="poveste"> 
+    
+    <p id="pov_noastra">POVESTEA NOASTR&#258; <p>
+     <p id="text_pov_noastra">O &#351;ti&#355;i! Face&#355;i parte din ea &#351;i ne bucur&#259;m mult. A sosit momentul s&#259; o continu&#259;m cu un eveniment important, de aceea v&#259; invit&#259;m cu drag s&#259; v&#259; al&#259;tura&#355;i nou&#259; peste fix...</p>
+     
+      </div>
+       
+    </div>
+   <div class="mijloc" id="mijloc"></div>
+    <div class="detalii" >
+        <div style="text-align:center;">
+    <div id="clockdiv">
+  <div>
+        <div class="smalltext" id="ziua">
+            <span class="days"></span>
+            <sup><sup> <sup><sup><sup> ZILE</sup></sup></sup></sup></sup>
+        </div>
+  </div>
+        
+  <div id="ora" > 
+      <div class="smalltext"  >
+        <span class="hours" ></span> 
+      <sup><sup><sup><sup><sup>ORE</sup></sup></sup></sup></sup>
+      </div>
+  </div>
+        
+  <div>
+    <div class="smalltext" id="minute">
+     <span class="minutes"></span>
+   <sup><sup> <sup><sup><sup>MIN</sup></sup></sup></sup></sup></div>
+  </div>
+        
+  <div>
+    <div class="smalltext" id="secunde">
+     <span class="seconds"></span>
+   <sup><sup> <sup><sup><sup>SEC</sup></sup></sup></sup></sup></div>
+  </div>
+</div>
+<p id="data">ADIC&#258; &#206;N DATA DE <b>28 MAI 2016</b></p>
+
+    </div>
+       <div class="harti">
+       <div id="harta1">
+       <p class="text_harta1"> CUNUNIA </p>
+       <p class="text_harta2">ORA 17:00, BISERICA DIN ULMI</p>
+       <p class="text_harta3">STRADA PRINCIPAL&#258;, COM. ULMI</p>
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="500px" height="300px"  src="https://maps.google.com/maps?q=44.8953994,25.5014263&hl=es;z=14&amp;output=embed" >
+       			 <div ><small><a href="http://embedgooglemaps.com"></a></small>
+        		</div>
+        	<div><small><a href="http://googlemapsgenerator.com"></a></small>
+        		</div>
+        </iframe></div>
+        
+       <div id="harta2">
+       <p class="text_harta1"> PETRECEREA  </p>
+       <p class="text_harta2">ORA 19:30, CASA GURMANDULUI</p>
+       <p class="text_harta3">ALEEA SINAIA, NR. 6-8 (LA IE&#350;IREA SPRE ANINOASA)</p>
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="500px" height="300px"  src="https://maps.google.com/maps?hl=en&q=Casa Gurmandului, Targoviste, Romania&ie=UTF8&t=m&z=14&iwloc=near&addr&output=embed" >
+       			 <div ><small><a href="http://embedgooglemaps.com"></a></small>
+        		</div>
+        	<div><small><a href="http://googlemapsgenerator.com"></a></small>
+        		</div>
+        </iframe></div>
+        </div>
+       <div class="contact">
+       <p id="contact_mare">CONTACT</p>
+       <p id="contact_mic"><b>Pentru detalii suplimentare pute&#355;i contacta:</b></p>
+       <p id="contact_mic1"> 0764.650.600 - Costi</p>
+       <p id="contact_mic2"> 0766.692.955 - Luiza</p>
+       
+       </div>
+    </div>
+   <div id="form_total"> 
+    <div id="text" style="font-size:30px; font-family:'Montserrat', sans-serif; font-size:30px; font-weight:bold; text-align:center; padding-top:20px; padding-bot:-10px " >
+  <p id="confirm_text"> V&#259; rug&#259;m s&#259; confirma&#355;i prezen&#355;a<br>p&#226;n&#259; la data de 1 mai</p>
+    </div>
+    
+      <div id="form" class="confirm">
+<form action="form.php" method="post" >
+  <p><b class="bold">CINE  </b> <input type="text" name="nume" required></p>
+  
+   <p style="margin-left:8px; margin-top:-2%;"><b class="bold">CÂ&#354;I</b>
+   <input type="radio" name="pers" value="1" id="one" required>
+   <label for="one">1</label>
+   <input type="radio" name="pers" value="2" id="two" required>
+   <label for="two">2</label>
+	<input type="radio" name="pers" value="3" id="three" required>
+    <label for="three">3</label>
+	<input type="radio" name="pers" value="4"  id="four" required>
+    <label for="four">4</label>
+  <br>
+  <div style="text-align:center; margin-top:-1%; ">
+  <input type="submit" name="submit" value="CONFIRM" >
+        </form></div></div>
+    
+    </div>
+</body>
+    
+  
+<footer>
+    
+    
+<script>
+    function getTimeRemaining(endtime) {
+    "use strict";
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = '05/27/2016 23:59:59';
+initializeClock('clockdiv', deadline);
+    </script>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    event.preventDefault();
+                });
+            });
+        </script>
+    
+    </footer>
+
+
+</html>
